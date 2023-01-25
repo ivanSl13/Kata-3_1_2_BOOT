@@ -11,7 +11,7 @@ import ru.slepokurov.web.service.UserService;
 @Controller
 public class UserController {
 
-    private UserService userService;
+    private final UserService userService;
 
     @Autowired
     public UserController(UserService userService) {
@@ -63,10 +63,5 @@ public class UserController {
     public String hello() {
         return "hello";
     }
-//
-//    @GetMapping("/")
-//    @ResponseBody
-//    public String helloWorld() {
-//        return "HelloWorld";
-//    }
+
 }
